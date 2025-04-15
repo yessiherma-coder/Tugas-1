@@ -1,0 +1,23 @@
+# Program menyimpan data karyawan yang tidak perlu diubah
+# menggunakan struktur data tuple
+
+# Fungsi untuk membuat tuple data karyawan
+def buat_karyawan(nama, nik, jabatan, gaji):
+    return (nama, nik, jabatan, gaji)
+
+# List untuk menyimpan data-data karyawan
+data_karyawan = []
+
+# Menambahkan data karyawan (contoh data statis)
+data_karyawan.append(buat_karyawan("Almira", "K001", "Manager", 10000000))
+data_karyawan.append(buat_karyawan("Almahira", "K002", "Staff", 4000000))
+data_karyawan.append(buat_karyawan("Citra", "K003", "HRD", 7000000))
+
+# Menampilkan semua data karyawan
+print("Daftar Karyawan:\n")
+for karyawan in data_karyawan:
+    print(f"Nama   : {karyawan[0]}")
+    print(f"NIK    : {karyawan[1]}")
+    print(f"Jabatan: {karyawan[2]}")
+    print(f"Gaji   : Rp{karyawan[3]:,}")
+    print("-" * 30)
